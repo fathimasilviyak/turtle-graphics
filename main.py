@@ -20,8 +20,22 @@ for i in range(4):
     flippy.forward(50)
     flippy.right(90)
 
+
 # Move turtle to the origin
 flippy.home()
+
+# Move turtle in other direction and draw lines
+# flippy.fd(100)
+# flippy.rt(90)
+# flippy.penup()
+# flippy.fd(100)
+# flippy.rt(90)
+# flippy.pendown()
+# flippy.fd(100)
+# flippy.rt(90)
+# flippy.penup()
+# flippy.fd(100)
+# flippy.pendown()
 
 # Create an object for the Screen class where the tutle will be shown
 my_screen = Screen()
