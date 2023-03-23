@@ -51,16 +51,26 @@ flippy.color("chartreuse")
 colors = ["light sky blue", "red", "magenta", "yellow", "hot pink", "cyan", "blue", "green", "yellow green", "gold",
           "pink", "blue violet"]
 
+
 # draw different shapes with different colors
-def shape(num_sides):
-    for i in range(num_sides):
-        flippy.right(360 / num_sides)
-        flippy.forward(100)
+# def shape(num_sides):
+#     for i in range(num_sides):
+#         flippy.right(360 / num_sides)
+#         flippy.forward(100)
+#
+# for i in range(3, 11):
+#     shape(i)
+#     flippy.color(random.choice(colors))
 
+# Random walk
+directions = [0, 90, 180, 270]
+flippy.width(15)
+flippy.speed("fastest")
 
-for i in range(3,11):
-    shape(i)
+for i in range(200):
     flippy.color(random.choice(colors))
+    flippy.forward(30)
+    flippy.setheading(random.choice(directions))
 
 # Create an object for the Screen class where the tutle will be shown
 my_screen = Screen()
@@ -70,7 +80,6 @@ print(my_screen.canvheight)
 
 # Access the method of screen object to exit the window when the screen detects a click
 my_screen.exitonclick()
-
 
 # # Import another module heroes from pypi
 # import heroes
