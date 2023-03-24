@@ -10,5 +10,7 @@ Link for documentation: https://docs.python.org/3/library/turtle.html#turtle.hom
 
 Link for turtle color: https://trinket.io/docs/colors
 
+RGB color: https://www.w3schools.com/colors/colors_rgb.asp
+
 
 This helps to understand how to import python libraries and utilise the classes defined in it. It is also possible to explore various attributes and methods of the classes in the imported library to draw whatever we want using python.
