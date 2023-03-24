@@ -1,13 +1,7 @@
 # Import the class Turtle and Screen from turtle module,
 # Screen represents the window on which the turtle going to show up
-import turtle
 from turtle import Turtle, Screen
 import random
-
-turtle.colormode(255)
-
-# Import module using alias
-# import turtle as t
 
 # Create an object for Turtle class
 flippy = Turtle()
@@ -45,31 +39,16 @@ flippy.color("chartreuse")
 
 
 # Draw a dashed line
-# for i in range(15):
-#     flippy.forward(10)
-#     flippy.penup()
-#     flippy.forward(10)
-#     flippy.pendown()
+for i in range(15):
+    flippy.forward(10)
+    flippy.penup()
+    flippy.forward(10)
+    flippy.pendown()
 
-
-
-
-
-def random_color():
-    r = random.randint(0,255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    new_color = (r, g, b)
-    return new_color
-
-
-
-
-
-# Create an object for the Screen class where the tutle will be shown
+# Create an object for the Screen class where the turtle will be shown
 my_screen = Screen()
 
-# Access the attribute of the screen object to show the screen and print screen height
+# Access the attribute of the screen object to print screen height
 print(my_screen.canvheight)
 
 # Access the method of screen object to exit the window when the screen detects a click
@@ -78,7 +57,6 @@ my_screen.exitonclick()
 # # Import another module heroes from pypi
 # import heroes
 # print(heroes.gen())
-
 
 
 # Play with tuples
