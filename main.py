@@ -51,19 +51,9 @@ flippy.color("chartreuse")
 #     flippy.forward(10)
 #     flippy.pendown()
 
-# colors = ["light sky blue", "red", "magenta", "yellow", "hot pink", "cyan", "blue", "green", "yellow green", "gold",
-#          "pink", "blue violet"]
 
 
-# draw different shapes with different colors
-# def shape(num_sides):
-#     for i in range(num_sides):
-#         flippy.right(360 / num_sides)
-#         flippy.forward(100)
-#
-# for i in range(3, 11):
-#     shape(i)
-#     flippy.color(random.choice(colors))
+
 
 def random_color():
     r = random.randint(0,255)
