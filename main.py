@@ -83,15 +83,7 @@ def random_color():
 #     flippy.setheading(random.choice(directions))
 
 
-# spirograph
-def spirograph(size_of_gap):
-    flippy.speed("fastest")
-    for i in range(int(360/size_of_gap)):
-        flippy.color(random_color())
-        flippy.circle(100)
-        flippy.setheading(flippy.heading() + size_of_gap)
 
-spirograph(5)
 
 # Create an object for the Screen class where the tutle will be shown
 my_screen = Screen()
