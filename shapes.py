@@ -1,8 +1,7 @@
 import turtle
-import turtle as t
 import random
 
-t.colormode(255)
+turtle.colormode(255)
 
 flippy = turtle.Turtle()
 

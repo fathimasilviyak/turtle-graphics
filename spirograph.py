@@ -1,10 +1,9 @@
-import turtle
 import turtle as t
 import random
 
 t.colormode(255)
 
-flippy = turtle.Turtle()
+flippy = t.Turtle()
 
 
 def random_color():
@@ -25,5 +24,5 @@ def spirograph(size_of_gap):
 
 spirograph(5)
 
-screen = turtle.Screen()
+screen = t.Screen()
 screen.exitonclick()
