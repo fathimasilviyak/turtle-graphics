@@ -72,15 +72,6 @@ def random_color():
     new_color = (r, g, b)
     return new_color
 
-# # Random walk
-# directions = [0, 90, 180, 270]
-# flippy.width(15)
-# flippy.speed("fastest")
-#
-# for i in range(200):
-#     flippy.color(random_color())
-#     flippy.forward(30)
-#     flippy.setheading(random.choice(directions))
 
 
 
