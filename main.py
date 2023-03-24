@@ -69,21 +69,29 @@ def random_color():
     r = random.randint(0,255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    return (r, g, b)
+    new_color = (r, g, b)
+    return new_color
 
-# Random walk
-directions = [0, 90, 180, 270]
-flippy.width(15)
-flippy.speed("fastest")
-
-for i in range(200):
-    flippy.color(random_color())
-    flippy.forward(30)
-    flippy.setheading(random.choice(directions))
-
-
+# # Random walk
+# directions = [0, 90, 180, 270]
+# flippy.width(15)
+# flippy.speed("fastest")
+#
+# for i in range(200):
+#     flippy.color(random_color())
+#     flippy.forward(30)
+#     flippy.setheading(random.choice(directions))
 
 
+# spirograph
+def spirograph(size_of_gap):
+    flippy.speed("fastest")
+    for i in range(int(360/size_of_gap)):
+        flippy.color(random_color())
+        flippy.circle(100)
+        flippy.setheading(flippy.heading() + size_of_gap)
+
+spirograph(5)
 
 # Create an object for the Screen class where the tutle will be shown
 my_screen = Screen()
