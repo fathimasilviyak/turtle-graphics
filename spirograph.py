@@ -24,3 +24,6 @@ def spirograph(size_of_gap):
 
 
 spirograph(5)
+
+screen = turtle.Screen()
+screen.exitonclick()
