@@ -1,7 +1,10 @@
 # Import the class Turtle and Screen from turtle module,
 # Screen represents the window on which the turtle going to show up
+import turtle
 from turtle import Turtle, Screen
 import random
+
+turtle.colormode(255)
 
 # Import module using alias
 # import turtle as t
@@ -19,7 +22,7 @@ flippy.color("chartreuse")
 # Move the tutle forward by 100 place
 # flippy.forward(100)
 
-## Draw a square
+# Draw a square
 # for i in range(4):
 #     flippy.forward(100)
 #     flippy.right(90)
@@ -48,8 +51,8 @@ flippy.color("chartreuse")
 #     flippy.forward(10)
 #     flippy.pendown()
 
-colors = ["light sky blue", "red", "magenta", "yellow", "hot pink", "cyan", "blue", "green", "yellow green", "gold",
-          "pink", "blue violet"]
+# colors = ["light sky blue", "red", "magenta", "yellow", "hot pink", "cyan", "blue", "green", "yellow green", "gold",
+#          "pink", "blue violet"]
 
 
 # draw different shapes with different colors
@@ -62,15 +65,25 @@ colors = ["light sky blue", "red", "magenta", "yellow", "hot pink", "cyan", "blu
 #     shape(i)
 #     flippy.color(random.choice(colors))
 
+def random_color():
+    r = random.randint(0,255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return (r, g, b)
+
 # Random walk
 directions = [0, 90, 180, 270]
 flippy.width(15)
 flippy.speed("fastest")
 
 for i in range(200):
-    flippy.color(random.choice(colors))
+    flippy.color(random_color())
     flippy.forward(30)
     flippy.setheading(random.choice(directions))
+
+
+
+
 
 # Create an object for the Screen class where the tutle will be shown
 my_screen = Screen()
@@ -84,3 +97,15 @@ my_screen.exitonclick()
 # # Import another module heroes from pypi
 # import heroes
 # print(heroes.gen())
+
+
+
+# Play with tuples
+# my_tuple = (1, 2, 3)
+# print(my_tuple[1])
+# tuple_1 = (1,2,3)
+# tuple_2 = (4,5,6)
+# tuple_3 = tuple_1+tuple_2
+# print(tuple_3)
+# tuple_4 = list(tuple_2)
+# print(tuple_4)
